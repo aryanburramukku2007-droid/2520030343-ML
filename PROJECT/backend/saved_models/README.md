@@ -1,0 +1,1 @@
+Run the Colab notebook. It will generate scaler.joblib, logistic_regression.joblib, lstm_model.keras, autoencoder_model.keras, ae_threshold.json, and model_features.json. Copy those files here before running the backend.

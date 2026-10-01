@@ -1,0 +1,189 @@
+{
+  "source_rows": 70000,
+  "source_columns": 91,
+  "duplicates_removed": 1725,
+  "duplicate_labels": {
+    "BENIGN": 1725
+  },
+  "unique_after_dedup": 68275,
+  "unique_benign_after_dedup": 33275,
+  "attack_rows_before_balance": 35000,
+  "attack_sampling_quotas": {
+    "LDAP": 4739,
+    "MSSQL": 6850,
+    "NetBIOS": 4739,
+    "Portmap": 4740,
+    "Syn": 5594,
+    "UDP": 4740,
+    "UDPLag": 1873
+  },
+  "final_rows": 66550,
+  "final_clean_columns": 89,
+  "final_modelready_columns": 71,
+  "final_binary_counts": {
+    "BENIGN": 33275,
+    "DDoS": 33275
+  },
+  "split_counts": {
+    "train": 42782,
+    "validation": 9508,
+    "test": 14260
+  },
+  "label_counts": {
+    "Syn": 5594,
+    "BENIGN": 33275,
+    "MSSQL": 6850,
+    "UDP": 4740,
+    "LDAP": 4739,
+    "NetBIOS": 4739,
+    "Portmap": 4740,
+    "UDPLag": 1873
+  },
+  "invalid_before": {
+    "Flow Bytes/s": 1618,
+    "Flow Packets/s": 1618
+  },
+  "training_only_imputation_medians": {
+    "Flow Bytes/s": 432091.8416259227,
+    "Flow Packets/s": 41666.66666666666
+  },
+  "invalid_after": {},
+  "duplicates_after": 0,
+  "dropped_from_clean": [
+    "Unnamed: 0",
+    "Fwd Header Length.1"
+  ],
+  "excluded_from_model_features": [
+    "BinaryLabel",
+    "Destination IP",
+    "Flow ID",
+    "Label",
+    "SimillarHTTP",
+    "Source IP",
+    "SourceCSV",
+    "Split",
+    "Timestamp"
+  ],
+  "constant_features_dropped_from_model": [
+    "Bwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "ECE Flag Count",
+    "FIN Flag Count",
+    "Fwd Avg Bulk Rate",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd URG Flags",
+    "PSH Flag Count"
+  ],
+  "model_feature_count": 68,
+  "model_features": [
+    "Source Port",
+    "Destination Port",
+    "Protocol",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Min Packet Length",
+    "Max Packet Length",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "SYN Flag Count",
+    "RST Flag Count",
+    "ACK Flag Count",
+    "URG Flag Count",
+    "CWE Flag Count",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Subflow Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Init_Win_bytes_forward",
+    "Init_Win_bytes_backward",
+    "act_data_pkt_fwd",
+    "min_seg_size_forward",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min",
+    "Inbound"
+  ],
+  "attack_split_allocations": {
+    "LDAP": {
+      "train": 3046,
+      "validation": 677,
+      "test": 1016
+    },
+    "MSSQL": {
+      "train": 4405,
+      "validation": 979,
+      "test": 1466
+    },
+    "NetBIOS": {
+      "train": 3046,
+      "validation": 677,
+      "test": 1016
+    },
+    "Portmap": {
+      "train": 3047,
+      "validation": 677,
+      "test": 1016
+    },
+    "Syn": {
+      "train": 3596,
+      "validation": 799,
+      "test": 1199
+    },
+    "UDP": {
+      "train": 3047,
+      "validation": 677,
+      "test": 1016
+    },
+    "UDPLag": {
+      "train": 1204,
+      "validation": 268,
+      "test": 401
+    }
+  }
+}

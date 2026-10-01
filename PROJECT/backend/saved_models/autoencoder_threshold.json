@@ -1,0 +1,5 @@
+{
+    "autoencoder_threshold": 0.126525490859982,
+    "validation_f1": 0.9100173043640488,
+    "selection_method": "Maximum F1 on validation precision-recall curve"
+}

@@ -1,0 +1,16 @@
+{
+    "project": "DDoS Attack Detection Using LSTM and Autoencoder",
+    "dataset": "CICDDoS2019",
+    "number_of_features": 68,
+    "lstm_sequence_length": 8,
+    "binary_labels": {
+        "0": "BENIGN",
+        "1": "DDoS"
+    },
+    "autoencoder_threshold": 0.126525490859982,
+    "models": {
+        "logistic_regression": "logistic_regression.joblib",
+        "lstm": "lstm_model.keras",
+        "autoencoder": "autoencoder_model.keras"
+    }
+}
