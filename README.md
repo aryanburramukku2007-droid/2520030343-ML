@@ -1,4 +1,3 @@
-# 2520030343_ML
 # 🛡️ SentinelFlow
 ## DDoS Attack Detection Using LSTM and Autoencoder-Based Anomaly Detection
 
